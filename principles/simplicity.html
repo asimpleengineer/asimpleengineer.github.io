@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>A Simple Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport content=" width="device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="Simple engineering principles">
+    <link rel="preload stylesheet" as=style href="../app.css">
+</head>
+
+<body class="text-black duration-200 ease-out dark:text-white">
+    <main class="prose prose-neutral relative mx-auto max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+        <div class="mb-16 flex items-center">
+            <div
+                class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]">
+                <h1 class="mb-2 text-title-letter font-bold">I</h1>
+            </div>
+            <div>
+                <h1 class="mb-2 text-title ">Simplicity</h1>
+                <div class="text-sub-title break-words">
+                    Simple things make complex systems.
+                </div>
+            </div>
+        </div>
+        <article>
+            <section>
+                <p>The principle that we often seem to forget during our working sessions.</p>
+                <p>When was the last time you started developing something and let your brain dump every technique
+                    possible, beautiful lines of code crafted to optimize every inch of your system, reused and abstract
+                    every duplicate piece of code, or even apply all the latest hot paradigms?</p>
+                <p>For me, this happens more often than not. We tend to make things more complicated than they need to
+                    be. Why? Are we trying to impress anyone? Flex about our coding skills?</p>
+                <p>Take this website as an example. I could've used GO+HTMX, Hugo, Next.js, or any other fancy tool to
+                    build it, but instead, this is just plain old HTML, CSS, and JavaScript to detect your system color
+                    scheme.</p>
+                <p>Don't outsmart yourself and write simple, stupid code that, together, builds a complex system.</p>
+            </section>
+        </article>
+    </main>
+    <script>
+        const scheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const htmlClass = document.documentElement.classList;
+        if (scheme.matches) {
+            htmlClass["add"]("dark");
+        } else {
+            htmlClass["remove"]("dark");
+        }
+    </script>
+    <footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+        <div class=mr-auto>
+            <a class=link href="" />&copy; 2024 A Simple Engineer</a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>A Simple Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport content=" width="device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="Simple engineering principles">
+    <link rel="preload stylesheet" as=style href="../app.css">
+</head>
+
+<body class="text-black duration-200 ease-out dark:text-white">
+    <main class="prose prose-neutral relative mx-auto max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+        <div class="mb-16 flex items-center">
+            <div
+                class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]">
+                <h1 class="mb-2 text-title-letter font-bold">II</h1>
+            </div>
+            <div>
+                <h1 class="mb-2 text-title ">Clear goals</h1>
+                <div class="text-sub-title break-words">
+                    "If you define the problem correctly, you almost have the solution."
+                </div>
+            </div>
+        </div>
+        <article>
+            <section>
+                <p>Having a complete vision about what you need to do when you start a new project can be really
+                    difficult, if not impossible. Yes, you can have a vision about the end product, but the steps to get
+                    there can be similar to the moves in a chess game.</p>
+                <p>Dealing with the unknown is much like traversing a forest where you need to reach point X. Instead of
+                    trying to go directly for point X, try point A first. This "divide and conquer" approach will help
+                    both mentally and will set you one step closer to the final solution.</p>
+                <p>When planning your next step, it's okay to try or explore new things. If point A is not getting you
+                    any closer to X, don't wait to reach it; adjust your course. What's really important when doing so
+                    is to have a fast feedback loop that allows you to adapt and fallback into the right path.</p>
+                <p>Know where you want to go, plan how to get there one step at a time.</p>
+            </section>
+        </article>
+    </main>
+    <script>
+        const scheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const htmlClass = document.documentElement.classList;
+        if (scheme.matches) {
+            htmlClass["add"]("dark");
+        } else {
+            htmlClass["remove"]("dark");
+        }
+    </script>
+    <footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+        <div class=mr-auto>
+            <a class=link href="" />&copy; 2024 A Simple Engineer</a>
+        </div>
+    </footer>
+</body>
+
+</html>

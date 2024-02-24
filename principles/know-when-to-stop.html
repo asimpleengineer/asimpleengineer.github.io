@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>A Simple Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport content=" width="device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="Simple engineering principles">
+    <link rel="preload stylesheet" as=style href="../app.css">
+</head>
+
+<body class="text-black duration-200 ease-out dark:text-white">
+    <main class="prose prose-neutral relative mx-auto max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+        <div class="mb-16 flex items-center">
+            <div
+                class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]">
+                <h1 class="mb-2 text-title-letter font-bold">V</h1>
+            </div>
+            <div>
+                <h1 class="mb-2 text-title ">Know when to stop</h1>
+                <div class="text-sub-title break-words">
+                    Effectiveness over Efficiency
+                </div>
+            </div>
+        </div>
+        <article>
+            <section>
+                <p>We often seek perfection and spend a lot of time optimizing and adjusting our software to meet
+                    possibilities that might not happen – the "what if" syndrome.</p>
+                <p>If you look at <a href="clear-goals.html">this principle</a>, you'll notice that, generally,
+                    effectiveness is better than efficiency. This means your code will change eventually, so it's better
+                    to be going the right way by doing something wrong in the way there than the opposite. In other
+                    words, stop when you know that you've reached your goal, not something you think will be happening
+                    if...
+                </p>
+                <p>This principle is one of the reasons this collection only has 5 principles. I could've added many
+                    more, but then it would be harder for me to remember them all. Instead, I keep the ones I believe
+                    are the core principles for the present moment.</p>
+            </section>
+        </article>
+    </main>
+    <script>
+        const scheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const htmlClass = document.documentElement.classList;
+        if (scheme.matches) {
+            htmlClass["add"]("dark");
+        } else {
+            htmlClass["remove"]("dark");
+        }
+    </script>
+    <footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+        <div class=mr-auto>
+            <a class=link href="" />&copy; 2024 A Simple Engineer</a>
+        </div>
+    </footer>
+</body>
+
+</html>
