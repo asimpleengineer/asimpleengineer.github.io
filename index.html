@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>A Simple Engineer</title>
+    <meta charset="utf-8">
+    <meta name="viewport content=" width="device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="Simple engineering principles">
+    <link rel="preload stylesheet" as=style href="app.css">
+</head>
+
+<body class="text-black dark:text-white">
+    <main class="prose prose-neutral relative mx-auto max-w-3xl px-8 pb-16 pt-12 dark:prose-invert">
+        <div class="mb-16 flex items-center">
+            <div
+                class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]">
+                <h1 class="mb-2 text-title-letter font-bold">A</h1>
+            </div>
+            <div>
+                <h1 class="mb-2 text-title ">Simple Engineer</h1>
+                <div class="text-sub-title break-words">
+                    collection of principles for simple, effective and scalable systems
+                </div>
+            </div>
+        </div>
+        <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+            <h2 class="!my-0 pb-1 font-medium !leading-none">Principle I - Simplicity</h2>
+            <span class="text-sm antialiased opacity-60">Simplicity over complexity</span>
+            <a class="absolute inset-0 text-[0]" href="principles/simplicity.html" />Principle
+            I</a>
+        </section>
+        <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+            <h2 class="!my-0 pb-1 font-medium !leading-none">Principle II - Clear goals</h2>
+            <span class="text-sm antialiased opacity-60">Divide and conquer. Set clear goals</span>
+            <a class="absolute inset-0 text-[0]" href="principles/clear-goals.html" />Principle
+            II</a>
+        </section>
+        <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+            <h2 class="!my-0 pb-1 font-medium !leading-none">Principle III - Just go do it</h2>
+            <span class="text-sm antialiased opacity-60">Jump the cliff. Do the thing by doing the work.</span>
+            <a class="absolute inset-0 text-[0]" href="principles/just-go-do-it.html" />Principle
+            III</a>
+        </section>
+        <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+            <h2 class="!my-0 pb-1 font-medium !leading-none">Principle IV - Share memory by communicating</h2>
+            <span class="text-sm antialiased opacity-60">"Don't communicate by sharing memory,
+                share memory by communicating."</span>
+            <a class="absolute inset-0 text-[0]" href="principles/share-mem-communicating.html" />Principle
+            IV</a>
+        </section>
+        <section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+            <h2 class="!my-0 pb-1 font-medium !leading-none">Principle V - Know when to stop</h2>
+            <span class="text-sm antialiased opacity-60">Good enough software is better than perfect.</span>
+            <a class="absolute inset-0 text-[0]" href="principles/know-when-to-stop.html" />Principle
+            V</a>
+        </section>
+    </main>
+    <footer class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60">
+        <div class=mr-auto>
+            <a class=link href="" />&copy; 2024 A Simple Engineer</a>
+        </div>
+    </footer>
+    <script>
+        const scheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const htmlClass = document.documentElement.classList;
+        if (scheme.matches) {
+            htmlClass["add"]("dark");
+        } else {
+            htmlClass["remove"]("dark");
+        }
+    </script>
+</body>
+
+</html>
